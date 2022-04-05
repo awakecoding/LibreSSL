@@ -63,6 +63,7 @@ endif()
 set_target_properties(tls PROPERTIES
 	OUTPUT_NAME tls${TLS_POSTFIX}
 	ARCHIVE_OUTPUT_NAME tls${TLS_POSTFIX})
+set_target_properties(tls PROPERTIES OUTPUT_NAME libtls ARCHIVE_OUTPUT_NAME libtls)
 set_target_properties(tls PROPERTIES VERSION ${TLS_VERSION}
 	SOVERSION ${TLS_MAJOR_VERSION})
 

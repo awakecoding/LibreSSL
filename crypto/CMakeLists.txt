@@ -1010,6 +1010,7 @@ endif()
 set_target_properties(crypto PROPERTIES
 	OUTPUT_NAME crypto${CRYPTO_POSTFIX}
 	ARCHIVE_OUTPUT_NAME crypto${CRYPTO_POSTFIX})
+set_target_properties(crypto PROPERTIES OUTPUT_NAME libcrypto ARCHIVE_OUTPUT_NAME libcrypto)
 set_target_properties(crypto PROPERTIES VERSION
 	${CRYPTO_VERSION} SOVERSION ${CRYPTO_MAJOR_VERSION})
 
