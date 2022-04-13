@@ -11,6 +11,9 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
 project (LibreSSL C ASM)
 
+set(CMAKE_SHARED_LIBRARY_PREFIX "lib")
+set(CMAKE_STATIC_LIBRARY_PREFIX "lib")
+
 include(CheckFunctionExists)
 include(CheckSymbolExists)
 include(CheckLibraryExists)

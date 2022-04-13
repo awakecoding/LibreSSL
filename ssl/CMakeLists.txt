@@ -78,7 +78,7 @@ endif()
 set_target_properties(ssl PROPERTIES
 	OUTPUT_NAME ssl${SSL_POSTFIX}
 	ARCHIVE_OUTPUT_NAME ssl${SSL_POSTFIX})
-set_target_properties(ssl PROPERTIES OUTPUT_NAME libssl ARCHIVE_OUTPUT_NAME libssl)
+set_target_properties(ssl PROPERTIES OUTPUT_NAME ssl ARCHIVE_OUTPUT_NAME ssl)
 set_target_properties(ssl PROPERTIES VERSION ${SSL_VERSION}
 	SOVERSION ${SSL_MAJOR_VERSION})
 
