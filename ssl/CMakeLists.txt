@@ -96,6 +96,7 @@ set_target_properties(ssl PROPERTIES
 	VERSION ${SSL_VERSION}
 	SOVERSION ${SSL_MAJOR_VERSION}
 )
+set_target_properties(ssl PROPERTIES OUTPUT_NAME ssl ARCHIVE_OUTPUT_NAME ssl)
 
 target_include_directories(
 	ssl

@@ -65,6 +65,7 @@ set_target_properties(tls PROPERTIES
 	VERSION ${TLS_VERSION}
 	SOVERSION ${TLS_MAJOR_VERSION}
 )
+set_target_properties(tls PROPERTIES OUTPUT_NAME tls ARCHIVE_OUTPUT_NAME tls)
 
 target_include_directories(
 	tls

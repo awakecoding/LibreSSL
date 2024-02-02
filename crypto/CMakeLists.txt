@@ -998,6 +998,7 @@ set_target_properties(crypto PROPERTIES
 	VERSION ${CRYPTO_VERSION}
 	SOVERSION ${CRYPTO_MAJOR_VERSION}
 )
+set_target_properties(crypto PROPERTIES OUTPUT_NAME crypto ARCHIVE_OUTPUT_NAME crypto)
 
 target_include_directories(
 	crypto
